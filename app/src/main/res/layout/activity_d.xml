@@ -6,6 +6,4 @@
     android:background="@color/dColor"
     tools:context=".ActivityD">
 
-
-
 </FrameLayout>
