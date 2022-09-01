@@ -17,47 +17,27 @@ class ActivityC() : AppCompatActivity(){
         val openDBtn = findViewById<Button>(R.id.openDFromCBtn)
         openDBtn.setOnClickListener { openD() }
         val closeCBtn = findViewById<Button>(R.id.closeCBtn)
-        closeCBtn.setOnClickListener { closeC() }
+        closeCBtn.setOnClickListener { finish() }
         val closeStackBtn = findViewById<Button>(R.id.closeStackBtn)
         closeStackBtn.setOnClickListener { closeStack() }
         Toast.makeText(this, taskId.toString(), Toast.LENGTH_SHORT).show()
 
     }
 
-
-
     private fun returnToA(){
         startActivity(Intent(this, ActivityA::class.java)
-
         )
-
     }
 
     private fun openD(){
-        this.finish()
-        startActivity(Intent(this, ActivityD::class.java)
-            .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
-
-        )
-
+        startActivity(Intent(this, ActivityD::class.java))
+        finishAffinity()
     }
-
-    private fun closeC(){
-        val intent = Intent(this, ActivityB::class.java)
-        startActivity(intent
-            .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-
-        )
-    }
-
 
     private fun closeStack(){
-
-        startActivity(
-            Intent(this, ActivityA::class.java)
-                .addFlags(Intent.FLAG_ACTIVITY_TASK_ON_HOME)
-
-            )
-
+        /*Данные методы вызываются, чтобы в "Recent Items" осталось только "ActivityA"*/
+        intentB.finishAndRemoveTask()
+        finishAfterTransition()
     }
+
 }

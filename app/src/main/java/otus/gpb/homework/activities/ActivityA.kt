@@ -1,14 +1,11 @@
 package otus.gpb.homework.activities
 
 import android.content.Intent
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
 import android.widget.Toast
-import androidx.annotation.RequiresApi
-import androidx.core.view.ContentInfoCompat.Flags
+
 
 
 class ActivityA : AppCompatActivity() {
@@ -22,12 +19,7 @@ class ActivityA : AppCompatActivity() {
 
 
     private fun openActB(){
-        startActivity(Intent(this, ActivityB::class.java)
-            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-            .addFlags(Intent.FLAG_ACTIVITY_MULTIPLE_TASK)
-
-
-        )
+        startActivity(Intent(this, ActivityB::class.java))
     }
 
     override fun onNewIntent(intent: Intent?) {
