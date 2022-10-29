@@ -9,13 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OtusActivityHW">
-        <activity android:name=".ActivityD"></activity>
+        <activity android:name=".ActivityD" />
         <activity android:name=".ActivityC" />
-        <activity android:name=".ActivityB" />
+        <activity android:name=".ActivityB"/>
         <activity
             android:name=".ActivityA"
             android:label="@string/title_activity_activity"
-            android:theme="@style/Theme.OtusActivityHW.NoActionBar">
+            android:theme="@style/Theme.OtusActivityHW.NoActionBar"
+            android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
