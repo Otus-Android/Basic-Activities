@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">Activities</string>
+    <string name="app_name">Activity #1 Homework</string>
+    <string name="title_activity_activity">ActivityA - Homework</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="button_a">Open ActivityA</string>
+    <string name="button_b">Open ActivityB</string>
+    <string name="button_c">Open ActivityC</string>
+    <string name="button_d">Open ActivityD</string>
+    <string name="button_close_stack">Close Stack</string>
+
+    <string name="affinity_task_1">com.azalia.affinity1task</string>
+    <string name="affinity_task_2">com.azalia.affinity2task</string>
+
 </resources>
