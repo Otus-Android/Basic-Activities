@@ -23,6 +23,7 @@ class ActivityC : AppCompatActivity() {
 
         btnOpenA.setOnClickListener {
             val intent = Intent(this, ActivityA::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
             startActivity(intent)
         }
 
