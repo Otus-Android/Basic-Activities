@@ -20,16 +20,19 @@ class ActivityC : AppCompatActivity() {
             startActivity(intent)
         }
         openActivityDbtn.setOnClickListener {
-            val intent = Intent(this, ActivityD::class.java)
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            val intent = Intent(this, ActivityD::class.java).apply {
+                addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            }
             startActivity(intent)
         }
         closeActivityCbtn.setOnClickListener {
             finish()
         }
         closeStackBtn.setOnClickListener {
-            val intent = Intent(this, ActivityA::class.java)
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            finish()
+            val intent = Intent(this, ActivityA::class.java).apply {
+                addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            }
             startActivity(intent)
         }
     }
