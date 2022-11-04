@@ -11,7 +11,9 @@ class ActivityA : AppCompatActivity() {
         setContentView(R.layout.activity_a)
 
         findViewById<Button>(R.id.open_b_button).setOnClickListener {
-            startActivity(Intent(this, ActivityB::class.java))
+            startActivity(Intent(this, ActivityB::class.java).apply {
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            })
         }
     }
 }
