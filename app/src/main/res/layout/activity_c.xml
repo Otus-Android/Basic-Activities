@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196f3"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ActivityC">
+
+    <Button
+        android:id="@+id/open_a_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open ActivityA" />
+
+    <Button
+        android:id="@+id/open_d_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open ActivityD" />
+
+    <Button
+        android:id="@+id/close_c_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close ActivityC" />
+
+    <Button
+        android:id="@+id/close_stack_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close Stack" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
