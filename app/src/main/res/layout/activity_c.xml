@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="#2196f3">
+    <Button
+        android:id="@+id/Open_A"
+        android:backgroundTint="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open ActivityA"
+        android:textSize="5dp"
+        android:layout_weight="1"
+        android:layout_marginRight="2dp"/>
+
+    <Button
+        android:id="@+id/Open_D"
+        android:backgroundTint="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open ActivityD"
+        android:textSize="5dp"
+        android:layout_weight="1"
+        android:layout_marginRight="2dp"/>
+
+    <Button
+        android:id="@+id/Close_C"
+        android:backgroundTint="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Close ActivityC"
+        android:textSize="5dp"
+        android:layout_weight="1"
+        android:layout_marginRight="2dp"/>
+
+    <Button
+        android:id="@+id/Close_Stack"
+        android:backgroundTint="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Close Stack"
+        android:textSize="5dp"
+        android:layout_weight="1"
+        android:layout_marginRight="2dp"/>
+</LinearLayout>
