@@ -14,10 +14,11 @@
         <activity
             android:name=".ActivityD"
             android:exported="false"
-            android:taskAffinity=".ActivityD"/>
+            android:taskAffinity=".ActivityB" />
         <activity
             android:name=".ActivityC"
-            android:exported="false" />
+            android:exported="false"
+            android:taskAffinity=".ActivityB" />
 
         <activity
             android:name=".ActivityB"

@@ -25,8 +25,8 @@ class ActivityC : AppCompatActivity() {
 
             val intent = Intent(this, ActivityD::class.java)
 
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+
 
             startActivity(intent)
         }
@@ -42,9 +42,7 @@ class ActivityC : AppCompatActivity() {
 
         closestack.setOnClickListener {
 
-            val intent = Intent(this, ActivityA::class.java)
-
-            startActivity(intent)
+           finishAffinity()
 
                     }
     }
