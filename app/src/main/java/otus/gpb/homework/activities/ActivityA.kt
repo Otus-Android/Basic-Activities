@@ -16,6 +16,8 @@ class ActivityA : AppCompatActivity() {
 
             val intent = Intent(this, ActivityB::class.java)
 
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_MULTIPLE_TASK)
+
             startActivity(intent)
         }
     }
