@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="otus.gpb.homework.activities">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -11,7 +10,35 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Activities"
-        tools:targetApi="31" />
+        android:theme="@style/Theme.ActivityBasic"
+        tools:targetApi="31">
+        <activity
+            android:name=".ActivityD"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.some.new.affinity"
+            android:exported="false"
+            android:label="@string/title_activity_d"
+            android:theme="@style/Theme.ActivityBasic.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ActivityC"
+            android:taskAffinity="com.some.new.affinity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ActivityB"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.some.new.affinity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ActivityA"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
 
 </manifest>
