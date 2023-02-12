@@ -35,8 +35,8 @@ class ActivityC() : AppCompatActivity(){
     }
 
     private fun closeStack(){
-        /*Данные методы вызываются, чтобы в "Recent Items" осталось только "ActivityA"*/
-        activityB.finishAndRemoveTask()
+        intent = Intent().putExtra("key", "destroyYourself!")
+        setResult(RESULT_OK, intent)
         finish()
     }
 

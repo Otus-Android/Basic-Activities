@@ -7,20 +7,24 @@ import android.widget.Button
 import android.widget.Toast
 
 class ActivityB : AppCompatActivity() {
+    private val contract = registerForActivityResult(BAndCContract()){
+        result -> if(result == "destroyYourself!"){
+            startActivity(Intent(this, ActivityA::class.java))
+            finishAndRemoveTask()
+    }
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_b)
         val openCBtn = findViewById<Button>(R.id.openCFromBBtn)
         openCBtn.setOnClickListener { openC() }
         Toast.makeText(this, taskId.toString(), Toast.LENGTH_SHORT).show()
-        activityB = this
 
     }
 
     private fun openC(){
-        startActivity(Intent(this, ActivityC::class.java)
+        contract.launch("")
 
-        )
     }
 }
 
