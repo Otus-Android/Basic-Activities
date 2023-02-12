@@ -11,13 +11,13 @@ class ActivityB : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_b)
         val openCBtn = findViewById<Button>(R.id.openCFromBBtn)
-        openCBtn.setOnClickListener { openActC() }
+        openCBtn.setOnClickListener { openC() }
         Toast.makeText(this, taskId.toString(), Toast.LENGTH_SHORT).show()
-        intentB = this
+        activityB = this
 
     }
 
-    private fun openActC(){
+    private fun openC(){
         startActivity(Intent(this, ActivityC::class.java)
 
         )

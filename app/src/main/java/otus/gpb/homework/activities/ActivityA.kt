@@ -13,12 +13,12 @@ class ActivityA : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_a)
         val openBBtn = findViewById<Button>(R.id.openBFromABtn)
-        openBBtn.setOnClickListener { openActB() }
+        openBBtn.setOnClickListener { openB() }
         Toast.makeText(this, "On create $taskId", Toast.LENGTH_SHORT).show()
     }
 
 
-    private fun openActB(){
+    private fun openB(){
         startActivity(Intent(this, ActivityB::class.java))
     }
 
