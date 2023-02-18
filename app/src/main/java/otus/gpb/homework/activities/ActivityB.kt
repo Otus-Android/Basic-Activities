@@ -11,9 +11,9 @@ class ActivityB : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_b)
-        val button = findViewById<Button>(R.id.openСButton)
+        val button = findViewById<Button>(R.id.open_c_button)
         button.setOnClickListener { onClickListener()}
-        val textView = findViewById<TextView>(R.id.textView)
+        val textView = findViewById<TextView>(R.id.text_view)
         textView.text = "ActivityB, task=$taskId"
     }
     private fun onClickListener() {

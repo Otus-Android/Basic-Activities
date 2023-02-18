@@ -8,7 +8,7 @@ class ActivityD : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_d)
-        val textView = findViewById<TextView>(R.id.textView)
+        val textView = findViewById<TextView>(R.id.text_view)
         textView.text = "ActivityD, task=$taskId"
     }
 }

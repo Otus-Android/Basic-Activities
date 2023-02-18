@@ -11,7 +11,7 @@ class ActivityC : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_c)
-        val openAbutton = findViewById<Button>(R.id.openAButton)
+        val openAbutton = findViewById<Button>(R.id.open_a_button)
         openAbutton.setOnClickListener { onOpenAClickListener() }
         val closeCButton = findViewById<Button>(R.id.closeCButton)
         closeCButton.setOnClickListener { onCloseCButtonClickListener() }
@@ -19,7 +19,7 @@ class ActivityC : AppCompatActivity() {
         closeStackButton.setOnClickListener { onCloseStackButtonClickListener() }
         val openDButton = findViewById<Button>(R.id.openDButton)
         openDButton.setOnClickListener { onOpenDButtonClickListener() }
-        val textView = findViewById<TextView>(R.id.textView)
+        val textView = findViewById<TextView>(R.id.text_view)
         textView.text = "ActivityC, task=$taskId"
     }
 
