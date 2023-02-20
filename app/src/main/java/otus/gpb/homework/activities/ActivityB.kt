@@ -16,7 +16,7 @@ class ActivityB : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_b)
-        val openCBtn = findViewById<Button>(R.id.openCFromBBtn)
+        val openCBtn = findViewById<Button>(R.id.open_c_from_b_button)
         openCBtn.setOnClickListener { openC() }
         Toast.makeText(this, taskId.toString(), Toast.LENGTH_SHORT).show()
 

@@ -5,12 +5,12 @@
     android:layout_height="match_parent"
     android:id="@+id/layoutA"
     tools:context=".ActivityA"
-    android:background="@color/aColor"
+    android:background="@color/a_color"
     >
 
     <Button
-        android:id="@+id/openBFromABtn"
-        android:text="@string/openBBtn"
+        android:id="@+id/open_b_from_a_button"
+        android:text="@string/open_b_button_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

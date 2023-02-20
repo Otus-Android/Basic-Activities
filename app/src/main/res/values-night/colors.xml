@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="cColor">#2196f3</color>
-    <color name="aColor">#f44336</color>
-    <color name="bColor">#4caf50</color>
-    <color name="dColor">#ffeb3b</color>
+    <color name="c_color">#2196f3</color>
+    <color name="a_color">#f44336</color>
+    <color name="b_color">#4caf50</color>
+    <color name="d_color">#ffeb3b</color>
 
 </resources>

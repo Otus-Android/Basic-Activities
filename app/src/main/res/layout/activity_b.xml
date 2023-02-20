@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bColor"
+    android:background="@color/b_color"
     tools:context=".ActivityB">
 
     <Button
-        android:id="@+id/openCFromBBtn"
-        android:text="@string/openCBtn"
+        android:id="@+id/open_c_from_b_button"
+        android:text="@string/open_c_button_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

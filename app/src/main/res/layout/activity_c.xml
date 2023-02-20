@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/cColor"
+    android:background="@color/c_color"
     tools:context=".ActivityC">
 
 
     <Button
-        android:id="@+id/openAFromCBtn"
-        android:text="@string/openABtn"
+        android:id="@+id/open_a_from_c_button"
+        android:text="@string/open_a_button_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="250dp"
@@ -18,8 +18,8 @@
         />
 
     <Button
-        android:id="@+id/openDFromCBtn"
-        android:text="@string/openDBtn"
+        android:id="@+id/open_d_from_c_button"
+        android:text="@string/open_d_button_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -27,8 +27,8 @@
          />
 
     <Button
-        android:id="@+id/closeCBtn"
-        android:text="@string/closeCBtn"
+        android:id="@+id/close_c_button"
+        android:text="@string/close_c_button_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -37,8 +37,8 @@
         />
 
     <Button
-        android:id="@+id/closeStackBtn"
-        android:text="@string/closeStackBtn"
+        android:id="@+id/close_stack_button"
+        android:text="@string/close_stack_button_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"

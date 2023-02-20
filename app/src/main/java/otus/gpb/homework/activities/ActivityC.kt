@@ -12,13 +12,13 @@ class ActivityC() : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_c)
-        val openABtn = findViewById<Button>(R.id.openAFromCBtn)
+        val openABtn = findViewById<Button>(R.id.open_a_from_c_button)
         openABtn.setOnClickListener { returnToA() }
-        val openDBtn = findViewById<Button>(R.id.openDFromCBtn)
+        val openDBtn = findViewById<Button>(R.id.open_d_from_c_button)
         openDBtn.setOnClickListener { openD() }
-        val closeCBtn = findViewById<Button>(R.id.closeCBtn)
+        val closeCBtn = findViewById<Button>(R.id.close_c_button)
         closeCBtn.setOnClickListener { finish() }
-        val closeStackBtn = findViewById<Button>(R.id.closeStackBtn)
+        val closeStackBtn = findViewById<Button>(R.id.close_stack_button)
         closeStackBtn.setOnClickListener { closeStack() }
         Toast.makeText(this, taskId.toString(), Toast.LENGTH_SHORT).show()
 
