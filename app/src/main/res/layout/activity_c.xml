@@ -8,45 +8,45 @@
     tools:context=".ActivityC">
 
     <Button
-        android:id="@+id/closeActivityC"
+        android:id="@+id/close_activity_c"
         android:layout_width="204dp"
         android:layout_height="70dp"
         android:text="@string/close_activity_c"
         android:textAllCaps="false"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/closeStack"
+        app:layout_constraintBottom_toTopOf="@+id/close_stack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/openActivityDFromC" />
+        app:layout_constraintTop_toBottomOf="@+id/open_activity_d_from_c" />
 
     <Button
-        android:id="@+id/openActivityDFromC"
+        android:id="@+id/open_activity_d_from_c"
         android:layout_width="204dp"
         android:layout_height="70dp"
         android:text="@string/open_activity_d"
         android:textAllCaps="false"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/closeActivityC"
+        app:layout_constraintBottom_toTopOf="@+id/close_activity_c"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/openActivityAFromC" />
+        app:layout_constraintTop_toBottomOf="@+id/open_activity_a_from_c" />
 
     <Button
-        android:id="@+id/openActivityAFromC"
+        android:id="@+id/open_activity_a_from_c"
         android:layout_width="204dp"
         android:layout_height="70dp"
         android:text="@string/open_activity_a"
         android:textAllCaps="false"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/openActivityDFromC"
+        app:layout_constraintBottom_toTopOf="@+id/open_activity_d_from_c"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/closeStack"
+        android:id="@+id/close_stack"
         android:layout_width="204dp"
         android:layout_height="70dp"
         android:text="@string/close_stack"
@@ -56,5 +56,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/closeActivityC" />
+        app:layout_constraintTop_toBottomOf="@+id/close_activity_c" />
 </androidx.constraintlayout.widget.ConstraintLayout>

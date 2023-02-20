@@ -11,7 +11,7 @@ class ActivityA : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activitiy_a)
 
-        val buttonOpenB = findViewById<Button>(R.id.openActivityBFromA)
+        val buttonOpenB = findViewById<Button>(R.id.open_activity_b_from_a)
 
         buttonOpenB.setOnClickListener {
             val intent = Intent(this, ActivityB::class.java)

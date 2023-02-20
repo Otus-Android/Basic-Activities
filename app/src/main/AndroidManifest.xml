@@ -18,7 +18,7 @@
             android:name=".ActivityA"
             android:exported="true"
             android:launchMode="singleTask"
-            android:taskAffinity="">
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -32,17 +32,17 @@
             android:name=".ActivityB"
             android:exported="false"
             android:launchMode="singleTask"
-            android:taskAffinity=""/>
+            android:taskAffinity="otus.gpb.homework.activities.affinity"/>
 
         <activity
             android:name=".ActivityC"
             android:exported="false"
-            android:taskAffinity=""/>
+            android:taskAffinity="otus.gpb.homework.activities.affinity"/>
 
         <activity
             android:name=".ActivityD"
             android:exported="false"
-            android:taskAffinity=""/>
+            android:taskAffinity="otus.gpb.homework.activities.affinity"/>
 
     </application>
 

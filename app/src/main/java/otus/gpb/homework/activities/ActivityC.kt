@@ -11,10 +11,10 @@ class ActivityC : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_c)
 
-        val buttonOpenA = findViewById<Button>(R.id.openActivityAFromC)
-        val buttonOpenD = findViewById<Button>(R.id.openActivityDFromC)
-        val buttonCloseC = findViewById<Button>(R.id.closeActivityC)
-        val buttonCloseStack = findViewById<Button>(R.id.closeStack)
+        val buttonOpenA = findViewById<Button>(R.id.open_activity_a_from_c)
+        val buttonOpenD = findViewById<Button>(R.id.open_activity_d_from_c)
+        val buttonCloseC = findViewById<Button>(R.id.close_activity_c)
+        val buttonCloseStack = findViewById<Button>(R.id.close_stack)
 
         buttonOpenA.setOnClickListener {
             val intent = Intent(this, ActivityA::class.java)
@@ -23,8 +23,9 @@ class ActivityC : AppCompatActivity() {
 
         buttonOpenD.setOnClickListener {
             val intent = Intent(this, ActivityD::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
             startActivity(intent)
-            finishAffinity()
         }
 
         buttonCloseC.setOnClickListener {
@@ -32,8 +33,6 @@ class ActivityC : AppCompatActivity() {
         }
 
         buttonCloseStack.setOnClickListener {
-            val intent = Intent(this, ActivityA::class.java)
-            startActivity(intent)
             finishAffinity()
         }
     }

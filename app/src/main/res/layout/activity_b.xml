@@ -8,7 +8,7 @@
     tools:context=".ActivityB">
 
     <Button
-        android:id="@+id/openActivityCFromB"
+        android:id="@+id/open_activity_c_from_b"
         android:layout_width="204dp"
         android:layout_height="70dp"
         android:text="@string/open_activity_c"
