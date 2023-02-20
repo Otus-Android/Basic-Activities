@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c_color"
+    tools:context=".ActivityC">
+
+
+    <Button
+        android:id="@+id/open_a_from_c_button"
+        android:text="@string/open_a_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/open_d_from_c_button"
+        android:text="@string/open_d_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+         />
+
+    <Button
+        android:id="@+id/close_c_button"
+        android:text="@string/close_c_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+
+        />
+
+    <Button
+        android:id="@+id/close_stack_button"
+        android:text="@string/close_stack_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+         />
+
+
+</LinearLayout>
