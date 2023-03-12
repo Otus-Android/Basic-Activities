@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Activities</string>
+    <string name="open_activity_a">Open Activity A</string>
+    <string name="open_activity_b">Open Activity B</string>
+    <string name="open_activity_c">Open Activity C</string>
+    <string name="open_activity_c_close">Close Activity C</string>
+    <string name="open_activity_d">Open Activity D</string>
+    <string name="open_activity_close">Close Stack</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

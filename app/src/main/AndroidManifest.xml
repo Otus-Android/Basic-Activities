@@ -12,6 +12,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Activities"
-        tools:targetApi="31" />
+        tools:targetApi="31">
+        <activity
+            android:name="ru.otus.android.prokofyev.activities.ActivityA"
+            android:launchMode="singleTask"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ru.otus.android.prokofyev.activities.ActivityB"
+            android:launchMode="singleTask"
+            android:taskAffinity="ru.otus.android.prokofyev.activities.affinity"/>
+        <activity
+            android:name="ru.otus.android.prokofyev.activities.ActivityC"
+            android:taskAffinity="ru.otus.android.prokofyev.activities.affinity"/>
+        <activity
+            android:name="ru.otus.android.prokofyev.activities.ActivityD"
+            android:taskAffinity="ru.otus.android.prokofyev.activities.affinity"/>
+    </application>
 
 </manifest>
