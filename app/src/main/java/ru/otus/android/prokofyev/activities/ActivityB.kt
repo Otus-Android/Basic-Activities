@@ -18,7 +18,7 @@ class ActivityB : AppCompatActivity() {
         val buttonOpenC = findViewById<Button>(R.id.buttonOpenC)
 
         buttonOpenC.setOnClickListener {
-            val intentC = Intent(applicationContext, ActivityC::class.java)
+            val intentC = Intent(this, ActivityC::class.java)
             startActivity(intentC)
         }
 
