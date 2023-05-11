@@ -17,6 +17,7 @@
             android:name=".ActivityA"
             android:exported="true"
             android:launchMode="singleTask"
+            android:taskAffinity="otus.gpb.homework.stack1"
             >
 
             <intent-filter>
@@ -26,12 +27,15 @@
         </activity>
         <activity
             android:name=".ActivityB"
+            android:taskAffinity="otus.gpb.homework.stack2"
             android:exported="false" />
         <activity
             android:name=".ActivityC"
+            android:taskAffinity="otus.gpb.homework.stack2"
             android:exported="false" />
         <activity
             android:name=".ActivityD"
+            android:taskAffinity="otus.gpb.homework.stack2"
             android:exported="false" />
     </application>
 

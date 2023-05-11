@@ -1,5 +1,6 @@
 package otus.gpb.homework.activities
 
+import android.app.ActivityManager
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,6 +14,7 @@ class ActivityC : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
+        sendLogs(localClassName,"onStart")
 
         val buttonOpenActivityA = findViewById<Button>(R.id.openActivityA)
         val buttonOpenActivityD = findViewById<Button>(R.id.openActivityD)
@@ -21,20 +23,29 @@ class ActivityC : AppCompatActivity() {
 
         buttonOpenActivityA.setOnClickListener {
             val intent = Intent(this, ActivityA::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
         buttonOpenActivityD.setOnClickListener {
             val intent = Intent(this, ActivityD::class.java)
-            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
             startActivity(intent)
+            finishAffinity()
         }
         buttonCloseActivityC.setOnClickListener {
             finish()
         }
         buttonCloseStack.setOnClickListener {
+            finishAffinity()
             val intent = Intent(this, ActivityA::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
+        title = resources.getString(R.string.app_name) + " : " + localClassName
+        sendLogs(localClassName, am = getSystemService(ACTIVITY_SERVICE) as ActivityManager)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        sendLogs(localClassName,"onDestroy")
     }
 }
