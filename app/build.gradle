@@ -1,16 +1,16 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id("io.gitlab.arturbosch.detekt")
 }
 
 android {
-    compileSdk 32
+    namespace 'com.rg.activity1'
+    compileSdk 33
 
     defaultConfig {
-        applicationId "otus.gpb.homework.activities"
-        minSdk 23
-        targetSdk 32
+        applicationId "com.rg.activity1"
+        minSdk 24
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -27,29 +27,21 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    buildFeatures {
+        viewBinding true
+    }
     kotlinOptions {
         jvmTarget = '1.8'
     }
 }
 
-detekt {
-    source = files("src/main/java", "src/main/kotlin")
-    config = files("$rootDir/config/detekt/detekt.yml")
-}
-
-tasks.named("detekt").configure {
-    reports {
-        txt.required.set(true)
-        html.required.set(false)
-        md.required.set(false)
-        xml.required.set(false)
-        sarif.required.set(false)
-        html.outputLocation.set(file("build/reports/detekt/detekt.html"))
-    }
-}
-
 dependencies {
-    implementation 'androidx.core:core-ktx:1.8.0'
-    implementation 'androidx.appcompat:appcompat:1.5.0'
-    implementation 'com.google.android.material:material:1.6.1'
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
