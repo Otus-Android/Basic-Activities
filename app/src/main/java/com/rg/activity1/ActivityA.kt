@@ -22,4 +22,9 @@ class ActivityA : AppCompatActivity() {
         }
         Log.d(taskId.toString(), "OnStart ${this.localClassName}")
     }
+
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+        Log.d(taskId.toString(), "onNewIntent ${this.localClassName}")
+    }
 }
