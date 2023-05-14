@@ -1,9 +1,11 @@
 package otus.gpb.homework.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 
 class ActivityB : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +17,13 @@ class ActivityB : AppCompatActivity() {
         super.onStart()
         val button = findViewById<Button>(R.id.buttonOpenActivityC)
         button.setOnClickListener{
-            Toast.makeText(this,"Open Activity C",Toast.LENGTH_LONG).show()
+            val intent = Intent(this, ActivityC::class.java)
+            startActivity(intent)
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Toast.makeText(this, "Close Activity B", Toast.LENGTH_SHORT).show()
     }
 }
