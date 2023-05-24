@@ -7,4 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="activity1">#f44336</color>
+    <color name="activity2">#4caf50</color>
+    <color name="activity3">#2196f3</color>
+    <color name="activity4">#ffeb3b</color>
+    <color name="buttonNotPressed">#808080</color>
 </resources>
