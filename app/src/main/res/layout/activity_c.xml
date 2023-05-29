@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#2196f3">
+
+    <Button
+        android:id="@+id/buttonActivityCOpenA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Open ActivityA"/>
+    <Button
+        android:id="@+id/buttonActivityCOpenD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Open ActivityD"/>
+    <Button
+        android:id="@+id/buttonActivityCClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Close ActivityC"/>
+    <Button
+        android:id="@+id/buttonActivityCCloseStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Close Stack"/>
+
+</LinearLayout>
