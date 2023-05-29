@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="otus.gpb.homework.activities">
 
@@ -12,6 +13,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Activities"
-        tools:targetApi="31" />
+        tools:targetApi="26">
+        <activity
+            android:name="com.hwork5.BasicActivities01.ActivityA"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.hwork5.BasicActivities01.ActivityB"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:clearTaskOnLaunch="true"
+            android:taskAffinity="otus.gpb.homework.activities.example"/>
+
+        <activity
+            android:launchMode="standard"
+            android:name="com.hwork5.BasicActivities01.ActivityC"
+            android:taskAffinity="otus.gpb.homework.activities.example"
+            android:exported="true"/>
+
+        <activity
+            android:launchMode="standard"
+            android:taskAffinity="otus.gpb.homework.activities.example"
+            android:name="com.hwork5.BasicActivities01.ActivityD"
+            android:exported="true" />
+
+    </application>
+
 
 </manifest>
