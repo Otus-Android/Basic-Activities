@@ -11,14 +11,10 @@ class ActivityB : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_activity_b)
-    }
-    override fun onStart() {
-        super.onStart()
         val button = findViewById<Button>(R.id.buttonSecondActivityB)
         button.setOnClickListener {
             val intent = Intent(applicationContext, ActivityC::class.java)
             startActivity(intent)
         }
     }
-
 }
