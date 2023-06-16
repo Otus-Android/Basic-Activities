@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#2196f3"
+    android:fitsSystemWindows="true"
+    tools:context=".ActivityC">
+
+    <Button
+        android:id="@+id/buttonSecondActivityA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open ActivityA"
+        android:layout_margin="50dp"
+        android:layout_gravity="bottom|center_horizontal"/>
+
+    <Button
+        android:id="@+id/buttonSecondActivityD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="100dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:text="Open ActivityD" />
+
+    <Button
+        android:id="@+id/buttonSecondActivityCloseS"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="200dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:text="Close Stack" />
+
+    <Button
+        android:id="@+id/buttonSecondActivityCloseC"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="150dp"
+        android:text="Close ActivityC" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
