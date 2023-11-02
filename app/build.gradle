@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id("io.gitlab.arturbosch.detekt")
 }
 
 android {
@@ -31,8 +32,25 @@ android {
     }
 }
 
+detekt {
+    source = files("src/main/java", "src/main/kotlin")
+    config = files("$rootDir/config/detekt/detekt.yml")
+}
+
+tasks.named("detekt").configure {
+    reports {
+        txt.required.set(true)
+        html.required.set(false)
+        md.required.set(false)
+        xml.required.set(false)
+        sarif.required.set(false)
+        html.outputLocation.set(file("build/reports/detekt/detekt.html"))
+    }
+}
+
 dependencies {
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.5.0'
     implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 }
