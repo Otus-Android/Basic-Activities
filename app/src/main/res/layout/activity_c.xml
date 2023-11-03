@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196f3">
+
+    <Button
+        android:id="@+id/btn_activity_c_open_a"
+        android:layout_width="175dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="304dp"
+        android:text="@string/open_activitya"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_activity_c_close_c"
+        android:layout_width="173dp"
+        android:layout_height="49dp"
+        android:text="@string/close_activityc"
+        app:layout_constraintTop_toBottomOf="@+id/btn_activity_c_open_d"
+        tools:layout_editor_absoluteX="66dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_activity_c_close_stack"
+        android:layout_width="173dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="192dp"
+        android:text="@string/close_stack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_activity_c_close_c"
+        tools:layout_editor_absoluteX="67dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_activity_c_open_d"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:text="@string/open_activityd"
+        app:layout_constraintTop_toBottomOf="@+id/btn_activity_c_open_a"
+        tools:layout_editor_absoluteX="67dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
