@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#2196f3"
+    tools:context=".ActivityC">
+
+    <Button
+        android:id="@+id/btnOpenActivityA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="50dp"
+        android:text="@string/activity_c_btn_open_activity_a"/>
+
+    <Button
+        android:id="@+id/btnOpenActivityD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="50dp"
+        android:text="@string/activity_c_btn_open_activity_d"/>
+
+    <Button
+        android:id="@+id/btnCloseActivityC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="50dp"
+        android:text="@string/activity_c_btn_close_activity_c"/>
+
+    <Button
+        android:id="@+id/btnCloseStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="50dp"
+        android:text="@string/activity_c_btn_close_stack"/>
+
+</LinearLayout>
