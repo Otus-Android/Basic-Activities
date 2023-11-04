@@ -15,45 +15,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Activities"
         tools:targetApi="31">
+
         <activity
             android:name=".MainActivityA"
             android:exported="true"
-            android:launchMode="standard">
+            android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".MainActivityD"
             android:exported="false"
             android:launchMode="standard">
-
-            <intent-filter>
-                <action android:name="android.intent.action.Main" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
+
         <activity
             android:name=".MainActivityC"
             android:exported="false"
-            android:launchMode="standard">
-
-            <intent-filter>
-                <action android:name="android.intent.action.Main" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:launchMode="singleTask">
         </activity>
+
         <activity
             android:name=".MainActivityB"
             android:exported="false"
-            android:launchMode="standard">
-
-            <intent-filter>
-                <action android:name="android.intent.action.Main" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:launchMode="singleTask">
         </activity>
     </application>
 

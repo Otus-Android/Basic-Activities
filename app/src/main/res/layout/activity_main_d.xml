@@ -7,4 +7,17 @@
     android:background="#ffeb3b"
     tools:context=".MainActivityD">
 
+    <Button
+        android:id="@+id/button_clear_D"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="148dp"
+        android:text="Close Stack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
