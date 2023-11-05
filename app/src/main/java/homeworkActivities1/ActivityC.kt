@@ -26,7 +26,7 @@ class ActivityC : AppCompatActivity(R.layout.activity_c) {
         buttonOpenD.setOnClickListener {
             println("You clicked on button ${R.string.open_activity_d}")
             val intent = Intent(this, ActivityD::class.java).apply {
-                flags = Intent.FLAG_ACTIVITY_CLEAR_TASK
+                flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
             }
             startActivity(intent)
         }
@@ -44,6 +44,7 @@ class ActivityC : AppCompatActivity(R.layout.activity_c) {
                 flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             }
             startActivity(intent)
+            finishAffinity()
         }
     }
 }
