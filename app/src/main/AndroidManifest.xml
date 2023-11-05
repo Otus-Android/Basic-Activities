@@ -24,6 +24,7 @@
             android:exported="false" />
         <activity
             android:name=".ActivityA"
+            android:launchMode="singleTask"
             android:exported="true">
 
             <intent-filter>
