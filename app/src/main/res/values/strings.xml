@@ -42,4 +42,10 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="open_activity_b">Open activity B</string>
+    <string name="open_activity_c">Open activity C</string>
+    <string name="open_activity_a">Open activity A</string>
+    <string name="open_activity_d">Open activity D</string>
+    <string name="close_activity_c">Close activity C</string>
+    <string name="close_stack">Close Stack</string>
 </resources>
