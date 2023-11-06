@@ -19,7 +19,7 @@
         <activity
             android:name=".MainActivityA"
             android:exported="true"
-            android:launchMode="singleTop">
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -28,20 +28,17 @@
 
         <activity
             android:name=".MainActivityB"
-            android:exported="false"
-            android:launchMode="singleTop">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".MainActivityC"
-            android:exported="false"
-            android:launchMode="singleTop">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".MainActivityD"
-            android:exported="false"
-            android:launchMode="singleTask">
+            android:exported="false">
         </activity>
 
 
