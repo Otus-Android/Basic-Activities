@@ -14,7 +14,7 @@ class ActivityA : AppCompatActivity(R.layout.activity_a) {
 
     private fun runActivityB() {
         val intent = Intent(this, ActivityB::class.java).apply {
-            flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_MULTIPLE_TASK
         }
         startActivity(intent)
     }
