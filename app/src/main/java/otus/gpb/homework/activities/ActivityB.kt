@@ -16,11 +16,6 @@ class ActivityB : AppCompatActivity() {
             // Обработка нажатия на кнопку "Open ActivityC"
                 val intent = Intent(this, ActivityC::class.java)
                 startActivity(intent)
-
-
         }
     }
-
-
-
 }

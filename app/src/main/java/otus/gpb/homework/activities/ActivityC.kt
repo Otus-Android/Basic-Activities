@@ -11,15 +11,12 @@ class ActivityC : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_c)
 
-
         val openActivityAButton = findViewById<Button>(R.id.btn_activity_c_open_a)
         openActivityAButton.setOnClickListener {
             // Обработка нажатия на кнопку "Open ActivityA"
-
                 val intent = Intent(this, ActivityA::class.java)
-                intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
+                //intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
                 startActivity(intent)
-
         }
 
         val openActivityDButton = findViewById<Button>(R.id.btn_activity_c_open_d)
@@ -30,8 +27,6 @@ class ActivityC : AppCompatActivity() {
                 intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
                 startActivity(intent)
             }
-
-
 
         val closeActivityCButton = findViewById<Button>(R.id.btn_activity_c_close_c)
         closeActivityCButton.setOnClickListener {
@@ -45,9 +40,7 @@ class ActivityC : AppCompatActivity() {
             val intent = Intent(this, ActivityA::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
+            finishAffinity()
         }
     }
-
-
-
 }
