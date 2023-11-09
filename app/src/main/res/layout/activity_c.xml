@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196f3"
+    tools:context=".ActivityC">
+
+
+    <Button
+        android:id="@+id/openActivityA"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="160dp"
+        android:text="Open Activity A" />
+
+
+    <Button
+        android:id="@+id/openActivityD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="110dp"
+        android:text="Open Activity D" />
+
+    <Button
+        android:id="@+id/CloseActivityC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="60dp"
+        android:text="Close Aktivity C" />
+
+    <Button
+        android:id="@+id/CloseStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close        stack"
+        android:layout_margin="10dp"
+        android:layout_gravity="bottom|center_horizontal"/>
+
+</FrameLayout>
+
