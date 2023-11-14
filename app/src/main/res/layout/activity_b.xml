@@ -7,7 +7,7 @@
     android:background="@color/ActivityB_background">
 
     <Button
-        android:id="@+id/openb"
+        android:id="@+id/openc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="125dp"

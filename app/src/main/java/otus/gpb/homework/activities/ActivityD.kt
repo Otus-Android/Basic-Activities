@@ -15,16 +15,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import android.util.Log
 
-class ActivityB : AppCompatActivity(R.layout.activity_b) {
-    private val tag="ActivityB"
+class ActivityD : AppCompatActivity(R.layout.activity_d) {
+    private val tag="ActivityD"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val button=findViewById<Button>(R.id.openc)
-        button.setOnClickListener {
-            Log.d(tag,"OpenC clicked")
-            val intent= Intent(this, ActivityC::class.java)
-            startActivity(intent)
-        }
+        Log.d(tag,"Created")
     }
 
 

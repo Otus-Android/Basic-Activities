@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Activities</string>
-    <string name="title_activity_activity">ActivityA</string>
+    <string name="title_activity_activity">Activities</string>
+    <string name="title_activity_A">ActivityA</string>
+    <string name="title_activity_B">ActivityB</string>
+    <string name="title_activity_C">ActivityC</string>
+    <string name="title_activity_D">ActivityD</string>
     <string name="ActivityA_button">Open ActivityB</string>
     <string name="ActivityB_button">Open ActivityC</string>
     <string name="ActivityC_button_1">Open ActivityA</string>

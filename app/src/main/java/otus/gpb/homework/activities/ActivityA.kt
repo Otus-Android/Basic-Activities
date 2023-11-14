@@ -1,29 +1,25 @@
 package otus.gpb.homework.activities
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import otus.gpb.homework.activities.ui.theme.ActivitiesTheme
+import android.util.Log
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
-class ActivityA : ComponentActivity(R.layout.activity_a) {
-    lateinit var button:Button
+class ActivityA : AppCompatActivity(R.layout.activity_a) {
+    private val tag="ActivityA"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val id=(applicationContext as App).id
-        button=findViewById(R.id.openb)
+        val button=findViewById<Button>(R.id.openb)
+        button.setOnClickListener {
+            Log.d(tag,"OpenB clicked")
+            val intent=Intent(this, ActivityB::class.java)
+            startActivity(intent)
+        }
     }
 
-    override fun onStart() {
-        super.onStart()
-        button.onClickListener {
-
-        }
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+        Log.d(tag,"On new intent")
     }
 }
