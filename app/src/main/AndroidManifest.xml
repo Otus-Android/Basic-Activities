@@ -31,7 +31,8 @@
         <activity
             android:name=".ActivityA"
             android:exported="true"
-            android:launchMode="singleTop">
+            android:launchMode="singleTask"
+            android:taskAffinity=".ActivityA">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
