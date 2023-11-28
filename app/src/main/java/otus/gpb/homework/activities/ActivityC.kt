@@ -25,10 +25,16 @@ class ActivityC : AppCompatActivity(R.layout.activity_c) {
         Log.d(TAG, "call onStart")
         buttonA.setOnClickListener {
             Log.d(TAG, "button clicked")
-
+            val intent = Intent(this, ActivityA::class.java)
+            startActivity(intent)
         }
         findViewById<Button>(R.id.mainActivityD).setOnClickListener {
 
         }
+    }
+
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+        Log.d(TAG, "button onNewIntent")
     }
 }
