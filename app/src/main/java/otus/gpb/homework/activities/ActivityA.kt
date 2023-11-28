@@ -25,7 +25,9 @@ class ActivityA : AppCompatActivity(R.layout.activity_a) {
         Log.d(TAG, "call onStart")
         buttonB.setOnClickListener {
             Log.d(TAG, "button clicked")
-
+            val intent = Intent(this, ActivityB::class.java).apply {
+                flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+            }
             startActivity(intent)
         }
     }
