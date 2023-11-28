@@ -24,6 +24,7 @@
         <activity
             android:name=".ActivityB"
             android:label="ActivityB"
+            android:launchMode="standard"
             android:exported="false" />
         <activity
             android:name=".ActivityA"
