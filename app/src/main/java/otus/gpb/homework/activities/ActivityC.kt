@@ -12,12 +12,14 @@ class ActivityC : AppCompatActivity(R.layout.activity_c) {
 
     lateinit var buttonA: Button
     lateinit var buttonD: Button
+    lateinit var buttonC: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         buttonA = findViewById(R.id.mainActivityA)
         buttonD = findViewById(R.id.mainActivityD)
+        buttonC = findViewById(R.id.mainActivityC)
     }
 
     override fun onStart() {
@@ -34,6 +36,9 @@ class ActivityC : AppCompatActivity(R.layout.activity_c) {
             }
 
             startActivity(intent)
+        }
+        buttonC.setOnClickListener {
+            finish()
         }
     }
 
