@@ -29,7 +29,11 @@ class ActivityC : AppCompatActivity(R.layout.activity_c) {
             startActivity(intent)
         }
         findViewById<Button>(R.id.mainActivityD).setOnClickListener {
+            val intent = Intent(this, ActivityD::class.java).apply {
+                flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+            }
 
+            startActivity(intent)
         }
     }
 

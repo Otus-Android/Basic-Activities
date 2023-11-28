@@ -16,10 +16,12 @@
         <activity
             android:name=".ActivityD"
             android:label="ActivityD"
+            android:launchMode="singleTask"
             android:exported="false" />
         <activity
             android:name=".ActivityC"
             android:label="ActivityC"
+            android:launchMode="singleTask"
             android:exported="false" />
         <activity
             android:name=".ActivityB"
@@ -30,6 +32,7 @@
             android:name=".ActivityA"
             android:exported="true"
             android:launchMode="standard"
+            android:taskAffinity=""
             android:label="ActivityA">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
