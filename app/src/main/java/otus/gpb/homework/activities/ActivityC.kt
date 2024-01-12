@@ -26,6 +26,7 @@ class ActivityC : AppCompatActivity() {
         super.onStart()
         buttonOpenActivitiyA.setOnClickListener {
 
+<<<<<<< HEAD
             val intent = Intent(this, ActivityA::class.java).apply{
             flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
 
@@ -41,20 +42,47 @@ class ActivityC : AppCompatActivity() {
         }
         closeActivityC.setOnClickListener {
             val intent = Intent(this, ActivityB::class.java)
+=======
+            val intent = Intent(this, ActivityA::class.java)
+            startActivity(intent)
+        }
+        buttonOpenActivityD.setOnClickListener {
+            val intent = Intent(this, ActivityD::class.java)
+            startActivity(intent)
+        }
+        closeActivityC.setOnClickListener {
+            val intent = Intent(this, ActivityC::class.java)
+>>>>>>> origin/master
             finish()
 
         }
         closeStack.setOnClickListener {
+<<<<<<< HEAD
             val intent = Intent(this, ActivityA::class.java).apply {
                 flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_SINGLE_TOP
             }
             startActivity(intent)
+=======
+            val intent = Intent(this, ActivityC::class.java)
+            finishAffinity()
+>>>>>>> origin/master
         }
 
 
     }
 
+<<<<<<< HEAD
 }
 
 
 
+=======
+    private fun finishAffinity(intent:Intent) {
+
+    }
+
+    private fun finishActivity() {
+        TODO("Not yet implemented")
+    }
+}
+>>>>>>> origin/master
