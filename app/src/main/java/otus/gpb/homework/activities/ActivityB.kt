@@ -20,9 +20,16 @@ class ActivityB : AppCompatActivity() {
         buttonB.setOnClickListener {
             val intent = Intent(this, ActivityC::class.java)
             startActivity(intent)
+<<<<<<< HEAD
             Log.d(TAG, "call onCreate")
 
         }
     }
 
 }
+=======
+            Log.d(TAG,"call onCreate")
+        }
+    }
+}
+>>>>>>> origin/master
