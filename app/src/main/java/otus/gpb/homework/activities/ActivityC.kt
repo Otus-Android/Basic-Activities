@@ -11,6 +11,7 @@ class ActivityC : AppCompatActivity() {
     private lateinit var buttonCloseC:Button
     private lateinit var buttonCloseAll:Button
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_c)
@@ -26,10 +27,13 @@ class ActivityC : AppCompatActivity() {
         }
         buttonOpenD.setOnClickListener() {
             val intent = Intent(this, ActivityD::class.java).apply{
-                flags = Intent.FLAG_ACTIVITY_CLEAR_TASK
+                flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
             }
             startActivity(intent)
+
         }
+
+
         buttonCloseC.setOnClickListener() {
             finish()
         }
