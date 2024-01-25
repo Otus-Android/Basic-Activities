@@ -24,6 +24,7 @@ class ActivityC : AppCompatActivity() {
         buttonOpenA.setOnClickListener(){
             val intent = Intent(this, ActivityA::class.java)
             startActivity(intent)
+
         }
         buttonOpenD.setOnClickListener() {
             val intent = Intent(this, ActivityD::class.java).apply{
@@ -39,7 +40,7 @@ class ActivityC : AppCompatActivity() {
         }
         buttonCloseAll.setOnClickListener() {
             val intent = Intent(this, ActivityA::class.java).apply {
-                flags = Intent.FLAG_ACTIVITY_CLEAR_TASK
+                finishAffinity()
             }
             startActivity(intent)
         }
